@@ -1,0 +1,17 @@
+name: Echo Message
+
+on:
+  push:
+    branches:
+      - main  # Change this to your branch name if different
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Echo message
+      run: echo "ciao intellimech"
